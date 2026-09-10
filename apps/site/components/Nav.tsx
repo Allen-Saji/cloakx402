@@ -5,7 +5,7 @@ export default function Nav() {
     <header className="fixed inset-x-0 top-0 z-40 border-b border-white/5 bg-void/70 backdrop-blur-md">
       <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-5">
         <a href="#" className="font-display text-lg font-bold tracking-tight">
-          cloak<span className="text-ember">402</span>
+          cloakx<span className="text-ember">402</span>
         </a>
         <div className="flex items-center gap-6 text-sm text-fog">
           <a href="/#flow" className="hidden transition-colors hover:text-bone sm:block">
