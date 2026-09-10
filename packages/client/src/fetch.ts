@@ -1,4 +1,4 @@
-import { CAIP_FUJI } from "@cloak402/eerc";
+import { CAIP_FUJI } from "@cloakx402/eerc";
 import { x402Client } from "@x402/core/client";
 import { wrapFetchWithPayment } from "@x402/fetch";
 import type { CloakAgent } from "./agent.js";

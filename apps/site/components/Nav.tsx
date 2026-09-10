@@ -1,4 +1,4 @@
-const GITHUB = "https://github.com/Allen-Saji/cloak402";
+const GITHUB = "https://github.com/Allen-Saji/cloakx402";
 
 export default function Nav() {
   return (

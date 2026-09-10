@@ -1,5 +1,5 @@
 {
-  "name": "@cloak402/server-demo",
+  "name": "@cloakx402/server-demo",
   "version": "0.1.0",
   "private": true,
   "description": "Demo paid API: an x402-protected endpoint priced in confidential eERC via the eerc-exact scheme",
@@ -10,7 +10,7 @@
     "start": "tsx src/serve.ts"
   },
   "dependencies": {
-    "@cloak402/eerc": "workspace:*",
+    "@cloakx402/eerc": "workspace:*",
     "@x402/core": "^2.17.0",
     "@x402/express": "^2.17.0",
     "ethers": "^6.13.0",

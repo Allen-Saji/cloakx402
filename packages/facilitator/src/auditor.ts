@@ -3,14 +3,14 @@ import {
   type BjjKeys,
   buildRegistrationWitness,
   type CircuitArtifacts,
-  type Cloak402Deployment,
+  type CloakX402Deployment,
   deriveBjjRawKey,
   ENCRYPTED_ERC_ABI,
   prove,
   REGISTRAR_ABI,
   registrationHash,
   toBjjKeys,
-} from "@cloak402/eerc";
+} from "@cloakx402/eerc";
 import { ethers } from "ethers";
 
 /**
@@ -35,7 +35,7 @@ export const deriveAuditorKeys = async (
  */
 export const ensureAuditorRotated = async (
   operator: ethers.Wallet,
-  deployment: Cloak402Deployment,
+  deployment: CloakX402Deployment,
   registrationArtifacts: CircuitArtifacts,
 ): Promise<BjjKeys> => {
   const chainId = BigInt(deployment.chainId);

@@ -1,4 +1,4 @@
-import { EERC_DECIMALS, FUJI } from "@cloak402/eerc";
+import { EERC_DECIMALS, FUJI } from "@cloakx402/eerc";
 import type {
   AssetAmount,
   Network,

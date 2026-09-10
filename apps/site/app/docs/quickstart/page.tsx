@@ -12,9 +12,9 @@ import {
 } from "@/components/docs/primitives";
 
 export const metadata: Metadata = {
-  title: "Quickstart | cloak402 docs",
+  title: "Quickstart | cloakx402 docs",
   description:
-    "Run the full cloak402 flow on Fuji: facilitator, demo paid API, and a paying agent.",
+    "Run the full cloakx402 flow on Fuji: facilitator, demo paid API, and a paying agent.",
 };
 
 export default function Quickstart() {
@@ -35,8 +35,8 @@ export default function Quickstart() {
 
       <H2 id="install">Install</H2>
       <CodeBlock title="shell">
-        {`git clone --recurse-submodules https://github.com/Allen-Saji/cloak402
-cd cloak402 && pnpm install
+        {`git clone --recurse-submodules https://github.com/Allen-Saji/cloakx402
+cd cloakx402 && pnpm install
 
 export FACILITATOR_PRIVATE_KEY=0x...   # operator key (gas + auditor)`}
       </CodeBlock>
@@ -48,19 +48,19 @@ export FACILITATOR_PRIVATE_KEY=0x...   # operator key (gas + auditor)`}
         and funds the agent&apos;s encrypted balance.
       </P>
       <CodeBlock title="shell">
-        {`pnpm --filter @cloak402/demo run setup`}
+        {`pnpm --filter @cloakx402/demo run setup`}
       </CodeBlock>
 
       <H2 id="run">Run the three services</H2>
       <CodeBlock title="terminal 1 — facilitator">
-        {`pnpm --filter @cloak402/facilitator start`}
+        {`pnpm --filter @cloakx402/facilitator start`}
       </CodeBlock>
       <CodeBlock title="terminal 2 — demo API">
         {`# PAY_TO = seller address printed by setup
-PAY_TO=0x... pnpm --filter @cloak402/server-demo start`}
+PAY_TO=0x... pnpm --filter @cloakx402/server-demo start`}
       </CodeBlock>
       <CodeBlock title="terminal 3 — the paying agent">
-        {`pnpm --filter @cloak402/demo agent`}
+        {`pnpm --filter @cloakx402/demo agent`}
       </CodeBlock>
 
       <H2 id="what-happens">What happens</H2>

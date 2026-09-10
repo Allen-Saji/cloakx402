@@ -2,11 +2,11 @@
  * Points the on-chain eERC auditor at the facilitator's derived auditor key.
  * Run once before first serving, and again after rotating the operator key.
  *
- * Usage: FACILITATOR_PRIVATE_KEY=... pnpm --filter @cloak402/facilitator rotate-auditor
+ * Usage: FACILITATOR_PRIVATE_KEY=... pnpm --filter @cloakx402/facilitator rotate-auditor
  */
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
-import { FUJI } from "@cloak402/eerc";
+import { FUJI } from "@cloakx402/eerc";
 import { ethers } from "ethers";
 import { ensureAuditorRotated } from "../src/auditor.js";
 

@@ -14,9 +14,9 @@ interface Row {
 
 const ROWS: Row[] = [
   { tx: "0x81ce…40aa", to: "0x7bd1…09c3", facilitator: "plain USDC", amount: "$1.50", cloaked: false },
-  { tx: "0x22fa…7964", to: "0xae43…229b", facilitator: "cloak402", amount: "$0.10", cloaked: true },
+  { tx: "0x22fa…7964", to: "0xae43…229b", facilitator: "cloakx402", amount: "$0.10", cloaked: true },
   { tx: "0xc4d8…1e7f", to: "0x3f02…88d1", facilitator: "plain USDC", amount: "$0.02", cloaked: false },
-  { tx: "0x4da3…eb86", to: "0xae43…229b", facilitator: "cloak402", amount: "$0.10", cloaked: true },
+  { tx: "0x4da3…eb86", to: "0xae43…229b", facilitator: "cloakx402", amount: "$0.10", cloaked: true },
   { tx: "0x9a17…d2c5", to: "0x510e…4b77", facilitator: "plain USDC", amount: "$12.40", cloaked: false },
 ];
 
@@ -33,7 +33,7 @@ export default function Ledger() {
             </h2>
             <p className="mt-4 max-w-[54ch] text-lg text-fog">
               Every other x402 facilitator on Avalanche settles plain USDC:
-              your agent&apos;s spend is public strategy. cloak402 rows carry
+              your agent&apos;s spend is public strategy. cloakx402 rows carry
               ciphertext, and only the auditor key can read them.
             </p>
           </div>
@@ -80,7 +80,7 @@ export default function Ledger() {
                   <td className="px-5 py-4 text-fog">{row.to}</td>
                   <td className="px-5 py-4">
                     {row.cloaked ? (
-                      <span className="text-ember">cloak402</span>
+                      <span className="text-ember">cloakx402</span>
                     ) : (
                       <span className="text-fog">{row.facilitator}</span>
                     )}
@@ -110,7 +110,7 @@ export default function Ledger() {
         </motion.div>
 
         <p className="mt-5 font-mono text-xs text-fog/70">
-          cloak402 rows are real Fuji settlements; plain rows are illustrative.
+          cloakx402 rows are real Fuji settlements; plain rows are illustrative.
           The auditor key is rotatable and held by the facilitator, or self-hosted for full privacy.
         </p>
       </div>

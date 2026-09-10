@@ -5,7 +5,7 @@ import {
   buildTransferWitness,
   buildUserOp,
   type CircuitArtifacts,
-  type Cloak402Deployment,
+  type CloakX402Deployment,
   deriveBjjRawKey,
   ENCRYPTED_ERC_ABI,
   ENTRYPOINT_ABI,
@@ -22,14 +22,14 @@ import {
   toBalanceView,
   toBjjKeys,
   type UserOpGasOptions,
-} from "@cloak402/eerc";
+} from "@cloakx402/eerc";
 import { ethers } from "ethers";
 
 export interface CloakAgentConfig {
   provider: ethers.Provider;
   /** owner EOA; only ever signs -- it never needs gas */
   owner: ethers.Wallet;
-  deployment: Cloak402Deployment;
+  deployment: CloakX402Deployment;
   artifacts: {
     registration: CircuitArtifacts;
     transfer: CircuitArtifacts;
@@ -50,7 +50,7 @@ export class CloakAgent {
 
   private readonly provider: ethers.Provider;
   private readonly owner: ethers.Wallet;
-  private readonly deployment: Cloak402Deployment;
+  private readonly deployment: CloakX402Deployment;
   private readonly artifacts: CloakAgentConfig["artifacts"];
   private readonly salt: bigint;
 

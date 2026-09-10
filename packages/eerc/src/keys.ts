@@ -47,10 +47,16 @@ export const registrationHash = (
   account: string,
 ): bigint => poseidon3([chainId, formattedKey, BigInt(account)]);
 
-/** Domain-separated message an account owner signs to derive its eERC key. */
+/**
+ * Domain-separated message an account owner signs to derive its eERC key.
+ * Keep the original domain stable so existing Fuji registrations remain valid.
+ */
 export const agentKeyMessage = (chainId: bigint, account: string): string =>
   `cloak402 eERC key v1 | chain ${chainId} | account ${account}`;
 
-/** Message the facilitator operator signs to derive the auditor key. */
+/**
+ * Message the facilitator operator signs to derive the auditor key.
+ * Keep the original domain stable so the deployed auditor key does not change.
+ */
 export const auditorKeyMessage = (chainId: bigint): string =>
   `cloak402 auditor key v1 | chain ${chainId}`;

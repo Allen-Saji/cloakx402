@@ -1,4 +1,4 @@
-import { CAIP_FUJI } from "@cloak402/eerc";
+import { CAIP_FUJI } from "@cloakx402/eerc";
 import { x402Facilitator } from "@x402/core/facilitator";
 import express, { type Express } from "express";
 import type { EercExactFacilitator } from "./scheme.js";

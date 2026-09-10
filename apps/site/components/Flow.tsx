@@ -116,7 +116,7 @@ export default function Flow() {
           heading="The facilitator verifies everything"
           body="The retry carries the signed UserOperation. Before settling, the facilitator runs its checklist against live chain state, and decrypts the in-proof auditor ciphertext to confirm the exact amount."
           frame={
-            <Frame title="cloak402 facilitator — verify">
+            <Frame title="cloakx402 facilitator — verify">
               <div className="space-y-1.5">
                 {CHECKS.map((check, i) => (
                   <motion.div

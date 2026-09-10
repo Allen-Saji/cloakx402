@@ -4,7 +4,7 @@
  *  2. registers a seller EOA (the paid API's payTo identity)
  *  3. registers the agent's smart account and funds its encrypted balance
  *
- * Usage: FACILITATOR_PRIVATE_KEY=... pnpm --filter @cloak402/demo setup
+ * Usage: FACILITATOR_PRIVATE_KEY=... pnpm --filter @cloakx402/demo setup
  */
 import {
   buildRegistrationWitness,
@@ -18,8 +18,8 @@ import {
   REGISTRAR_ABI,
   registrationHash,
   toBjjKeys,
-} from "@cloak402/eerc";
-import { ensureAuditorRotated } from "@cloak402/facilitator";
+} from "@cloakx402/eerc";
+import { ensureAuditorRotated } from "@cloakx402/facilitator";
 import { ethers } from "ethers";
 import {
   ARTIFACTS,
@@ -34,6 +34,7 @@ const AGENT_DEPOSIT = ethers.parseEther("0.05");
 const ERC20_SEED = ethers.parseEther("20"); // 20 test tokens -> 20_000_000 system units
 const MIN_AGENT_BALANCE = 1_000_000n; // re-seed below 1 token
 
+// Keep this domain stable so rerunning setup derives the existing Fuji seller key.
 export const SELLER_KEY_MESSAGE = "cloak402 seller key v1";
 
 const main = async () => {

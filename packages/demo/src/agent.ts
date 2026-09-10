@@ -3,9 +3,9 @@
  * proves an encrypted transfer, retries with X-PAYMENT, prints the result
  * and the settlement transaction.
  *
- * Usage: pnpm --filter @cloak402/demo agent   (facilitator + demo API running)
+ * Usage: pnpm --filter @cloakx402/demo agent   (facilitator + demo API running)
  */
-import { createCloakFetch } from "@cloak402/client";
+import { createCloakFetch } from "@cloakx402/client";
 import { decodePaymentResponseHeader } from "@x402/core/http";
 import { createDemoAgent, getProvider, loadOrCreateState } from "./shared.js";
 

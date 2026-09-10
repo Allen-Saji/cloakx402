@@ -14,7 +14,7 @@ import {
 } from "@/components/docs/primitives";
 
 export const metadata: Metadata = {
-  title: "The eerc-exact scheme | cloak402 docs",
+  title: "The eerc-exact scheme | cloakx402 docs",
   description:
     "Reference for the eerc-exact x402 v2 payment scheme: PaymentRequirements, PaymentPayload, verification checklist, settlement, latency, and the transfer circuit public signal layout.",
 };
@@ -192,7 +192,7 @@ export default function EercExact() {
         <Code>circom/transfer.circom</Code> (public inputs only),
         cross-checked against <Code>EncryptedERC._executePrivateTransfer</Code>
         . Also published in the repo at{" "}
-        <A href="https://github.com/Allen-Saji/cloak402/blob/main/docs/eerc-exact.md">
+        <A href="https://github.com/Allen-Saji/cloakx402/blob/main/docs/eerc-exact.md">
           docs/eerc-exact.md
         </A>
         .

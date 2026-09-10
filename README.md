@@ -1,14 +1,16 @@
-# cloak402
+# cloakx402
 
 Confidential x402 payments on Avalanche.
 
-x402 lets clients and AI agents pay for HTTP APIs per request. Today every x402 payment on Avalanche settles as a plain USDC transfer: anyone watching the chain can see which services an agent uses, how often, and how much it spends. cloak402 keeps the rails and hides the numbers.
+Live: [cloakx402.allensaji.dev](https://cloakx402.allensaji.dev)
+
+x402 lets clients and AI agents pay for HTTP APIs per request. Today every x402 payment on Avalanche settles as a plain USDC transfer: anyone watching the chain can see which services an agent uses, how often, and how much it spends. cloakx402 keeps the rails and hides the numbers.
 
 Payments settle through eERC (Encrypted ERC), AvaCloud's confidential token standard. Balances and transfer amounts stay encrypted on-chain under ElGamal + zk-SNARKs (Groth16). A rotatable auditor key gives compliance-grade visibility to exactly one designated party and nobody else.
 
 ## How it works
 
-![cloak402 payment flow: agent requests, gets 402 with eerc-exact terms, builds a zk proof of an encrypted transfer, retries with X-PAYMENT, the facilitator verifies and self-bundles settlement to Avalanche C-Chain, and the API returns 200](docs/cloak402-flow.png)
+![cloakx402 payment flow: agent requests, gets 402 with eerc-exact terms, builds a zk proof of an encrypted transfer, retries with X-PAYMENT, the facilitator verifies and self-bundles settlement to Avalanche C-Chain, and the API returns 200](docs/cloakx402-flow.png)
 
 - The agent's wallet is an ERC-4337 smart account. eERC binds transfers to msg.sender, so the account submits its own transfer through the EntryPoint while the facilitator sponsors gas. The agent never needs AVAX.
 - The facilitator implements a custom x402 v2 scheme, [`eerc-exact`](docs/eerc-exact.md), registered for `eip155:43113` (Fuji). It verifies the zk proof against the payer's live balance ciphertext, decrypts the in-proof auditor ciphertext to confirm the exact amount, and self-bundles settlement via `entryPoint.handleOps` -- no external bundler or paymaster service.
@@ -32,23 +34,23 @@ Built on the x402 v2 packages (`@x402/core`, `@x402/express`, `@x402/fetch`): `e
 Prerequisites: Node 22, pnpm 9, a funded Fuji key that owns the deployed eERC stack.
 
 ```bash
-git clone --recurse-submodules https://github.com/Allen-Saji/cloak402
-cd cloak402 && pnpm install
+git clone --recurse-submodules https://github.com/Allen-Saji/cloakx402
+cd cloakx402 && pnpm install
 
 export FACILITATOR_PRIVATE_KEY=0x...   # operator key (gas + auditor)
 
 # one-time: rotate the eERC auditor to the facilitator's derived key,
 # register a seller and the agent's smart account, fund its encrypted balance
-pnpm --filter @cloak402/demo run setup
+pnpm --filter @cloakx402/demo run setup
 
 # terminal 1: facilitator
-pnpm --filter @cloak402/facilitator start
+pnpm --filter @cloakx402/facilitator start
 
 # terminal 2: demo API (PAY_TO = seller address printed by setup)
-PAY_TO=0x... pnpm --filter @cloak402/server-demo start
+PAY_TO=0x... pnpm --filter @cloakx402/server-demo start
 
 # terminal 3: the paying agent
-pnpm --filter @cloak402/demo agent
+pnpm --filter @cloakx402/demo agent
 ```
 
 The agent hits `GET /api/alpha`, receives a 402 with `eerc-exact` terms, proves an encrypted transfer of exactly the required amount, retries with the payment header, and gets the resource plus the settlement transaction hash. Amounts on Snowtrace are ciphertexts.
@@ -74,7 +76,7 @@ Built for the Team1 India Speedrun: Privacy on Avalanche (July 2026). Testnet (F
 
 ## Prior art
 
-cloak402 ports the idea behind [px402](https://px402.allensaji.dev) (private x402 on Solana / MagicBlock private ephemeral rollups) to the Avalanche stack.
+cloakx402 ports the idea behind [px402](https://px402.allensaji.dev) (private x402 on Solana / MagicBlock private ephemeral rollups) to the Avalanche stack.
 
 ## License
 

@@ -12,9 +12,9 @@ import {
 } from "@/components/docs/primitives";
 
 export const metadata: Metadata = {
-  title: "Introduction | cloak402 docs",
+  title: "Introduction | cloakx402 docs",
   description:
-    "What cloak402 is: a confidential x402 facilitator on Avalanche that settles paid API requests in encrypted eERC.",
+    "What cloakx402 is: a confidential x402 facilitator on Avalanche that settles paid API requests in encrypted eERC.",
 };
 
 export default function Introduction() {
@@ -23,7 +23,7 @@ export default function Introduction() {
       <PageHeader
         eyebrow="Getting started"
         title="Introduction"
-        lead="cloak402 is a confidential x402 facilitator on Avalanche. Agents pay for APIs per request; the transfer is public, the amount is nobody's business."
+        lead="cloakx402 is a confidential x402 facilitator on Avalanche. Agents pay for APIs per request; the transfer is public, the amount is nobody's business."
       />
 
       <H2 id="the-problem">The problem</H2>
@@ -37,7 +37,7 @@ export default function Introduction() {
 
       <H2 id="the-approach">The approach</H2>
       <P>
-        cloak402 keeps the rails and hides the numbers. Payments settle through
+        cloakx402 keeps the rails and hides the numbers. Payments settle through
         eERC (Encrypted ERC), AvaCloud&apos;s confidential token standard.
         Balances and transfer amounts stay encrypted on-chain under ElGamal +
         zk-SNARKs (Groth16). A rotatable auditor key gives compliance-grade
@@ -96,7 +96,7 @@ export default function Introduction() {
 
       <H2 id="prior-art">Prior art</H2>
       <P>
-        cloak402 ports the idea behind{" "}
+        cloakx402 ports the idea behind{" "}
         <A href="https://px402.allensaji.dev">px402</A> (private x402 on
         Solana / MagicBlock private ephemeral rollups) to the Avalanche stack.
       </P>

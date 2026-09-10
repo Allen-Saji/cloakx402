@@ -19,17 +19,23 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "cloak402 | confidential x402 payments on Avalanche",
+  metadataBase: new URL("https://cloakx402.allensaji.dev"),
+  title: "cloakx402 | confidential x402 payments on Avalanche",
   description:
     "Pay APIs per request with x402, settle in encrypted eERC. Amounts stay ciphertext on-chain; a rotatable auditor key keeps it compliance-grade. Built on Avalanche.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "cloak402",
+    title: "cloakx402",
     description: "Confidential x402 payments on Avalanche. Hide the numbers, keep the rails.",
+    url: "/",
+    siteName: "cloakx402",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "cloak402",
+    title: "cloakx402",
     description: "Confidential x402 payments on Avalanche. Hide the numbers, keep the rails.",
   },
 };

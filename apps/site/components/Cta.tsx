@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 
-const GITHUB = "https://github.com/Allen-Saji/cloak402";
+const GITHUB = "https://github.com/Allen-Saji/cloakx402";
 
 export default function Cta() {
   return (
@@ -24,7 +24,7 @@ export default function Cta() {
 
         <div className="mx-auto mt-8 max-w-md overflow-x-auto rounded-lg border border-white/10 bg-void px-5 py-4 text-left font-mono text-sm text-fog">
           <div>
-            <span className="text-ember">$</span> pnpm --filter @cloak402/demo agent
+            <span className="text-ember">$</span> pnpm --filter @cloakx402/demo agent
           </div>
           <div className="mt-1 text-fog/60">HTTP 200 · amount on-chain: ▓▓▓▓▓▓</div>
         </div>

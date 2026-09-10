@@ -9,9 +9,9 @@ import {
 } from "@/components/docs/primitives";
 
 export const metadata: Metadata = {
-  title: "Threat model | cloak402 docs",
+  title: "Threat model | cloakx402 docs",
   description:
-    "What cloak402 protects against, what it trusts, and the tradeoffs: auditor visibility, replay, concurrency, withheld proofs, gas sponsorship, key derivation.",
+    "What cloakx402 protects against, what it trusts, and the tradeoffs: auditor visibility, replay, concurrency, withheld proofs, gas sponsorship, key derivation.",
 };
 
 export default function ThreatModel() {

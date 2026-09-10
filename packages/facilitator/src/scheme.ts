@@ -1,6 +1,6 @@
 import {
   type BjjKeys,
-  type Cloak402Deployment,
+  type CloakX402Deployment,
   type PackedUserOperation,
   type SerializedUserOperation,
   decryptPCT,
@@ -14,7 +14,7 @@ import {
   TRANSFER_SIGNALS,
   TRANSFER_VERIFIER_ABI,
   SIMPLE_ACCOUNT_ABI,
-} from "@cloak402/eerc";
+} from "@cloakx402/eerc";
 import type {
   FacilitatorContext,
   Network,
@@ -34,7 +34,7 @@ export interface EercExactFacilitatorConfig {
   signer: ethers.Wallet;
   /** auditor BabyJubJub keys; must match the on-chain auditor public key */
   auditorKeys: BjjKeys;
-  deployment: Cloak402Deployment;
+  deployment: CloakX402Deployment;
   /** EntryPoint deposit sponsorship: top up to this many wei when below min */
   depositTopUpWei?: bigint;
   depositMinWei?: bigint;
@@ -76,7 +76,7 @@ export class EercExactFacilitator {
 
   private readonly signer: ethers.Wallet;
   private readonly auditorKeys: BjjKeys;
-  private readonly deployment: Cloak402Deployment;
+  private readonly deployment: CloakX402Deployment;
   private readonly queue = new KeyedQueue();
   private readonly depositTopUpWei: bigint;
   private readonly depositMinWei: bigint;

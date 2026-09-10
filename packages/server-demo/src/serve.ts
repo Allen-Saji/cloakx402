@@ -1,4 +1,4 @@
-import { CAIP_FUJI } from "@cloak402/eerc";
+import { CAIP_FUJI } from "@cloakx402/eerc";
 import { HTTPFacilitatorClient } from "@x402/core/server";
 import { paymentMiddlewareFromConfig } from "@x402/express";
 import express from "express";
@@ -59,7 +59,7 @@ const main = async () => {
   });
 
   app.listen(port, () => {
-    console.log(`cloak402 demo API on :${port}`);
+    console.log(`cloakx402 demo API on :${port}`);
     console.log(`  paid route:  GET /api/alpha (${PRICE})`);
     console.log(`  payTo:       ${payTo}`);
     console.log(`  facilitator: ${facilitatorUrl}`);

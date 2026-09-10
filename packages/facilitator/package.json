@@ -1,5 +1,5 @@
 {
-  "name": "@cloak402/facilitator",
+  "name": "@cloakx402/facilitator",
   "version": "0.1.0",
   "private": true,
   "description": "x402 facilitator implementing the eerc-exact scheme: verifies encrypted eERC payments and self-bundles ERC-4337 settlement on Avalanche",
@@ -12,7 +12,7 @@
     "rotate-auditor": "tsx scripts/rotate-auditor.ts"
   },
   "dependencies": {
-    "@cloak402/eerc": "workspace:*",
+    "@cloakx402/eerc": "workspace:*",
     "@x402/core": "^2.17.0",
     "ethers": "^6.13.0",
     "express": "^4.21.0"

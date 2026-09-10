@@ -1,8 +1,8 @@
 {
-  "name": "@cloak402/eerc",
+  "name": "@cloakx402/eerc",
   "version": "0.1.0",
   "private": true,
-  "description": "eERC crypto core for cloak402: key derivation, PCT encryption, transfer proofs, 4337 UserOp helpers",
+  "description": "eERC crypto core for cloakx402: key derivation, PCT encryption, transfer proofs, 4337 UserOp helpers",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",

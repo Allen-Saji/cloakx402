@@ -1,4 +1,4 @@
-import { FUJI, FUJI_CHAIN_ID } from "@cloak402/eerc";
+import { FUJI, FUJI_CHAIN_ID } from "@cloakx402/eerc";
 import { ethers } from "ethers";
 import { createFacilitatorApp } from "./app.js";
 import { deriveAuditorKeys } from "./auditor.js";
@@ -46,13 +46,13 @@ const main = async () => {
     console.error(
       "on-chain auditor key does not match the derived facilitator auditor key",
     );
-    console.error("run: pnpm --filter @cloak402/facilitator rotate-auditor");
+    console.error("run: pnpm --filter @cloakx402/facilitator rotate-auditor");
     process.exit(1);
   }
 
   const { app } = createFacilitatorApp(scheme);
   app.listen(port, () => {
-    console.log(`cloak402 facilitator on :${port}`);
+    console.log(`cloakx402 facilitator on :${port}`);
     console.log(`  signer:  ${signer.address}`);
     console.log(`  network: ${FUJI.network}`);
     console.log(`  scheme:  ${scheme.scheme}`);

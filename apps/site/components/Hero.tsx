@@ -5,7 +5,7 @@ import DecryptedText from "./bits/DecryptedText";
 
 const DarkVeil = dynamic(() => import("./bits/DarkVeil"), { ssr: false });
 
-const GITHUB = "https://github.com/Allen-Saji/cloak402";
+const GITHUB = "https://github.com/Allen-Saji/cloakx402";
 const SETTLE_TX =
   "0x22fa036ae2bccbb35a578cad1540f91b44eadefe6a7c1dee805e8b2b7f629964";
 
@@ -34,7 +34,7 @@ export default function Hero() {
         </h1>
 
         <p className="mt-7 max-w-[52ch] text-lg leading-relaxed text-fog">
-          cloak402 is a confidential x402 facilitator on Avalanche. Agents pay
+          cloakx402 is a confidential x402 facilitator on Avalanche. Agents pay
           per request in encrypted eERC: the transfer is public, the amount is
           nobody&apos;s business.
         </p>

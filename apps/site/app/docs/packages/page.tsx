@@ -10,9 +10,9 @@ import {
 } from "@/components/docs/primitives";
 
 export const metadata: Metadata = {
-  title: "Packages | cloak402 docs",
+  title: "Packages | cloakx402 docs",
   description:
-    "The cloak402 monorepo: eERC crypto core, facilitator, agent SDK, demo paid API, and the Fuji end-to-end demo.",
+    "The cloakx402 monorepo: eERC crypto core, facilitator, agent SDK, demo paid API, and the Fuji end-to-end demo.",
 };
 
 export default function Packages() {
@@ -64,7 +64,7 @@ export default function Packages() {
 
       <H2 id="x402-fit">Built on x402 v2</H2>
       <P>
-        cloak402 builds on the x402 v2 packages (<Code>@x402/core</Code>,{" "}
+        cloakx402 builds on the x402 v2 packages (<Code>@x402/core</Code>,{" "}
         <Code>@x402/express</Code>, <Code>@x402/fetch</Code>):{" "}
         <Code>eerc-exact</Code> plugs in as a scheme registration, without
         forking the protocol. The scheme is specified in{" "}
@@ -74,8 +74,8 @@ export default function Packages() {
       <H2 id="source">Source</H2>
       <P>
         Everything is MIT-licensed at{" "}
-        <A href="https://github.com/Allen-Saji/cloak402">
-          github.com/Allen-Saji/cloak402
+        <A href="https://github.com/Allen-Saji/cloakx402">
+          github.com/Allen-Saji/cloakx402
         </A>
         . The packages are workspace-internal for now (not published to npm);
         the <A href="/docs/quickstart">quickstart</A> runs everything from the

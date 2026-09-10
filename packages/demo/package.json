@@ -1,8 +1,8 @@
 {
-  "name": "@cloak402/demo",
+  "name": "@cloakx402/demo",
   "version": "0.1.0",
   "private": true,
-  "description": "Fuji end-to-end demo: setup script and a paying agent hitting the demo API through the cloak402 facilitator",
+  "description": "Fuji end-to-end demo: setup script and a paying agent hitting the demo API through the cloakx402 facilitator",
   "type": "module",
   "scripts": {
     "typecheck": "tsc -p tsconfig.json",
@@ -10,9 +10,9 @@
     "agent": "tsx src/agent.ts"
   },
   "dependencies": {
-    "@cloak402/client": "workspace:*",
-    "@cloak402/eerc": "workspace:*",
-    "@cloak402/facilitator": "workspace:*",
+    "@cloakx402/client": "workspace:*",
+    "@cloakx402/eerc": "workspace:*",
+    "@cloakx402/facilitator": "workspace:*",
     "@x402/core": "^2.17.0",
     "ethers": "^6.13.0"
   },

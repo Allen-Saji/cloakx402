@@ -12,9 +12,9 @@ import {
 } from "@/components/docs/primitives";
 
 export const metadata: Metadata = {
-  title: "How it works | cloak402 docs",
+  title: "How it works | cloakx402 docs",
   description:
-    "The cloak402 payment flow: 402 terms, client-side zk proof, facilitator verification, and self-bundled 4337 settlement.",
+    "The cloakx402 payment flow: 402 terms, client-side zk proof, facilitator verification, and self-bundled 4337 settlement.",
 };
 
 export default function HowItWorks() {
@@ -88,11 +88,11 @@ export default function HowItWorks() {
 
       <H2 id="protocol-fit">Where it sits in x402</H2>
       <P>
-        cloak402 is built on the x402 v2 packages (<Code>@x402/core</Code>,{" "}
+        cloakx402 is built on the x402 v2 packages (<Code>@x402/core</Code>,{" "}
         <Code>@x402/express</Code>, <Code>@x402/fetch</Code>):{" "}
         <Code>eerc-exact</Code> plugs in as a scheme registration, without
         forking the protocol. Any x402 resource server can price endpoints in
-        encrypted eERC by pointing at a cloak402 facilitator.
+        encrypted eERC by pointing at a cloakx402 facilitator.
       </P>
 
       <PrevNext current="/docs/how-it-works" />

@@ -1,8 +1,8 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
-import { CloakAgent } from "@cloak402/client";
-import { FUJI } from "@cloak402/eerc";
+import { CloakAgent } from "@cloakx402/client";
+import { FUJI } from "@cloakx402/eerc";
 import { ethers } from "ethers";
 
 export const DEFAULT_RPC = "https://api.avax-test.network/ext/bc/C/rpc";

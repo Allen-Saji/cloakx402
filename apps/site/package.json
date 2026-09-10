@@ -1,8 +1,8 @@
 {
-  "name": "@cloak402/site",
+  "name": "@cloakx402/site",
   "version": "0.1.0",
   "private": true,
-  "description": "cloak402 landing page",
+  "description": "cloakx402 landing page",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

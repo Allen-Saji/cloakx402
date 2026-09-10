@@ -2,7 +2,7 @@
  * Fuji deployment addresses. Mirror of packages/contracts/deployments/fuji.json
  * (kept as a TS const so runtime packages need no fs access; update both together).
  */
-export interface Cloak402Deployment {
+export interface CloakX402Deployment {
   chainId: number;
   network: string;
   entryPoint: string;
@@ -13,7 +13,7 @@ export interface Cloak402Deployment {
   testERC20: string;
 }
 
-export const FUJI: Cloak402Deployment = {
+export const FUJI: CloakX402Deployment = {
   chainId: 43113,
   network: "eip155:43113",
   entryPoint: "0x0000000071727De22E5E9d8BAf0edAc6f37da032",

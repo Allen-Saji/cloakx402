@@ -54,7 +54,7 @@ importers:
 
   packages/client:
     dependencies:
-      '@cloak402/eerc':
+      '@cloakx402/eerc':
         specifier: workspace:*
         version: link:../eerc
       '@x402/core':
@@ -76,13 +76,13 @@ importers:
 
   packages/demo:
     dependencies:
-      '@cloak402/client':
+      '@cloakx402/client':
         specifier: workspace:*
         version: link:../client
-      '@cloak402/eerc':
+      '@cloakx402/eerc':
         specifier: workspace:*
         version: link:../eerc
-      '@cloak402/facilitator':
+      '@cloakx402/facilitator':
         specifier: workspace:*
         version: link:../facilitator
       '@x402/core':
@@ -132,7 +132,7 @@ importers:
 
   packages/facilitator:
     dependencies:
-      '@cloak402/eerc':
+      '@cloakx402/eerc':
         specifier: workspace:*
         version: link:../eerc
       '@x402/core':
@@ -160,7 +160,7 @@ importers:
 
   packages/server-demo:
     dependencies:
-      '@cloak402/eerc':
+      '@cloakx402/eerc':
         specifier: workspace:*
         version: link:../eerc
       '@x402/core':
